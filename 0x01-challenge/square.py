@@ -38,17 +38,18 @@ class Square:
         """
         return (self.width * 2) + (self.height * 2)
 
-    def __str__(self):
+    def __repr__(self):
         """
         Returns a string representation of the square.
         
         Returns:
-        A string representation of the square in the format 'width/height'.
+        A string representation of the square in the format 'Square(width, height)'.
         """
-        return "{}/{}".format(self.width, self.height)
+        return "Square({}, {})".format(self.width, self.height)
 
 if __name__ == "__main__":
     s = Square(width=12, height=9)
     print(s)
     print(s.area_of_my_square())
     print(s.perimeter_of_my_square())
+
